@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "AccessToPopularArtworks",
+    "version": "1.0",
+    "description": "",
+    "content_scripts": [
+      {
+        "matches": ["https://www.pixiv.net/*"],
+        "css": ["style.css"],
+        "js": ["jquery-3.5.1.min.js", "main.js"]
+      }
+    ]
+  }

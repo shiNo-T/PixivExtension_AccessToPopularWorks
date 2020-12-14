@@ -1,0 +1,27 @@
+/* pixivプレミアム無料体験ページへの強制遷移を無効に */
+a[class="jn70pf-1 hYvGvO"][aria-label="pixivプレミアム無料体験"] {
+    pointer-events: none;
+}
+
+/* ユーザ向け機能説明にテキストを変更 */
+.jn70pf-5.iCqVcO {
+    font-size: 0;
+}
+.jn70pf-5.iCqVcO:before{
+    font-size: 14px;
+    content:"左のサムネイルをクリックすることで該当作品にジャンプできます。";
+}
+
+/* グラデーションマスクを外して全サムネイルをクリック可能に */
+.jn70pf-3.fvHsDQ:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0) linear-gradient(90deg, rgba(245, 245, 245, 0) 0%, rgb(245, 245, 245) 100%) repeat scroll 0% 0%;
+  }
+
+
